@@ -1,0 +1,17 @@
+{
+  "name": "math-quiz-app",
+  "version": "1.0.0",
+  "description": "A math quiz app for students",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}
