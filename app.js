@@ -1,16 +1,15 @@
-if (!window.React || !window.ReactDOM || !window.Babel) {
-  document.getElementById('root').innerHTML = '<div style="color: red; text-align: center;">無法載入資源，請檢查網絡</div>';
-  throw new Error('Dependencies missing');
-}
+import React, { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import './styles.css';
 
 function MathApp() {
-  const [grade, setGrade] = React.useState('');
-  const [topic, setTopic] = React.useState('');
-  const [questions, setQuestions] = React.useState([]);
-  const [showAnswers, setShowAnswers] = React.useState(false);
-  const [error, setError] = React.useState('');
-  const [answers, setAnswers] = React.useState({});
-  const [feedback, setFeedback] = React.useState({});
+  const [grade, setGrade] = useState('');
+  const [topic, setTopic] = useState('');
+  const [questions, setQuestions] = useState([]);
+  const [showAnswers, setShowAnswers] = useState(false);
+  const [error, setError] = useState('');
+  const [answers, setAnswers] = useState({});
+  const [feedback, setFeedback] = useState({});
 
   const grades = ['4年級', '5年級', '6年級'];
   const topicsByGrade = {
@@ -165,10 +164,5 @@ function MathApp() {
   );
 }
 
-try {
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<MathApp />);
-} catch (err) {
-  console.error('載入錯誤:', err.message);
-  document.getElementById('root').innerHTML = '<div style="color: red; text-align: center;">程式載入失敗，請檢查網絡</div>';
-}
+const root = createRoot(document.getElementById('root'));
+root.render(<MathApp />);
