@@ -1,94 +1,19 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-#root {
-  min-height: 100vh;
-  background: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.app {
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  max-width: 600px;
-  width: 100%;
-}
-.title {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.error {
-  color: red;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.select-box {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-select {
-  width: 50%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-select:disabled {
-  background: #e0e0e0;
-}
-button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.generate-btn {
-  background: #007bff;
-}
-.generate-btn:disabled {
-  background: #cccccc;
-}
-.toggle-btn {
-  background: #6c757d;
-}
-.check-btn {
-  background: #28a745;
-}
-.questions {
-  margin-top: 20px;
-}
-.question-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  background: #f8f9fa;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-}
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.feedback {
-  color: #28a745;
-  margin-top: 5px;
-}
-.feedback.error {
-  color: #dc3545;
-}
+body { margin: 0; font-family: Arial; }
+#root { min-height: 100vh; background: #f0f0f0; display: flex; justify-content: center; align-items: center; }
+.app { padding: 20px; background: white; border-radius: 8px; max-width: 600px; width: 100%; }
+.title { font-size: 24px; text-align: center; margin-bottom: 20px; }
+.error { color: red; text-align: center; margin-bottom: 10px; }
+.select-box { display: flex; gap: 10px; margin-bottom: 20px; }
+select { width: 50%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+select:disabled { background: #e0e0e0; }
+button { width: 100%; padding: 10px; margin-bottom: 10px; color: white; border: none; border-radius: 4px; cursor: pointer; }
+.generate-btn { background: #007bff; }
+.generate-btn:disabled { background: #cccccc; }
+.toggle-btn { background: #6c757d; }
+.check-btn { background: #28a745; }
+.questions { margin-top: 20px; }
+.question-title { font-size: 18px; margin-bottom: 10px; }
+li { background: #f8f9fa; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+.feedback { color: #28a745; margin-top: 5px; }
+.feedback.error { color: #dc3545; }
